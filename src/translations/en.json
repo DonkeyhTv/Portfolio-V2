@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "role": "Full Stack Developer",
+    "description": "I transform your ideas into exceptional digital experiences",
+    "cta": {
+      "primary": "View My Work",
+      "secondary": "Download Resume"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Full Stack Developer passionate about innovation and new technologies",
+    "heading": "Complete Web Experience Creator",
+    "paragraph1": "With 5 years of experience in web development, I master the entire application creation cycle: from initial web design with Figma to production deployment. My versatility allows me to work with React, Vue.js, and Angular according to project needs.",
+    "paragraph2": "Graduate of BES WEBDEVELOPER from Paul Hankar Institute in Brussels and passionate self-taught developer, I continue to train regularly, notably through Technocité. This thirst for learning allows me to stay at the cutting edge of technology and offer innovative solutions.",
+    "paragraph3": "My expertise covers frontend/backend deployment, database management with DBeaver, automation via cron/Putty, service integration (mailing, Twilio), and Docker usage. I ensure that every project is tested, performant, and maintainable.",
+    "downloadCV": "Download Resume",
+    "yearsExperience": "Years of Experience",
+    "features": {
+      "cleanCode": {
+        "title": "Clean & Maintainable Code",
+        "description": "I prioritize structured, documented, and tested code to facilitate project evolution and maintenance."
+      },
+      "modernDesign": {
+        "title": "Modern & Responsive Design",
+        "description": "Creating elegant interfaces with Figma, optimized for all devices and focused on user experience."
+      },
+      "performance": {
+        "title": "Optimized Performance",
+        "description": "Fast and smooth applications through code optimization and efficient deployment."
+      },
+      "userFocused": {
+        "title": "User Centered",
+        "description": "Development oriented towards real user needs to create intuitive and effective solutions."
+      }
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Discover my recent work",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "viewAll": "View All Projects",
+    "filter": {
+      "all": "All",
+      "web": "Web Applications",
+      "website": "Websites",
+      "fullstack": "Full Stack"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies and tools I master"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Currently available for new opportunities. Let's work together on something exceptional.",
+    "getInTouch": "Get in Touch",
+    "description": "Feel free to reach out to discuss your projects, ideas, or collaboration opportunities. I'd be delighted to hear from you.",
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email",
+      "emailPlaceholder": "john@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "How can I help you?",
+      "message": "Message",
+      "messagePlaceholder": "Your message here...",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "builtWith": "Built with React, TypeScript, and Tailwind CSS"
+  },
+  "404": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist.",
+    "backHome": "Back to Home"
+  }
+}
