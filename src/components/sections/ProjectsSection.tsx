@@ -2,75 +2,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import ProjectCard from '../common/ProjectCard';
-
-const projects = [
-  {
-    id: 1,
-    title: 'E-Commerce Platform',
-    description:
-      'Plateforme e-commerce complète avec gestion des stocks, paiements sécurisés et tableau de bord administrateur.',
-    image: '/images/projects/ecommerce-platform.jpg',
-    tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    category: 'web',
-    link: '#',
-    github: '#',
-  },
-  {
-    id: 2,
-    title: 'Corporate Website',
-    description:
-      'Site vitrine moderne et responsive pour une entreprise internationale avec CMS intégré.',
-    image: '/images/projects/corporate-website.jpg',
-    tags: ['Vue.js', 'Tailwind', 'Figma', 'SEO'],
-    category: 'website',
-    link: '#',
-    github: '#',
-  },
-  {
-    id: 3,
-    title: 'Dashboard Analytics',
-    description:
-      'Application web complexe de visualisation de données en temps réel avec graphiques interactifs.',
-    image: '/images/projects/dashboard-analytics.jpg',
-    tags: ['Angular', 'D3.js', 'Docker', 'DBeaver'],
-    category: 'web',
-    link: '#',
-    github: '#',
-  },
-  {
-    id: 4,
-    title: 'Booking System',
-    description:
-      'Système de réservation complet avec notifications SMS via Twilio et gestion des disponibilités.',
-    image: '/images/projects/booking-system.jpg',
-    tags: ['React', 'Twilio', 'Cron Jobs', 'MySQL'],
-    category: 'fullstack',
-    link: '#',
-    github: '#',
-  },
-  {
-    id: 5,
-    title: 'Portfolio Website',
-    description:
-      'Site portfolio créatif avec animations avancées et design sur mesure.',
-    image: '/images/projects/portfolio-website.jpg',
-    tags: ['Vue.js', 'GSAP', 'Figma', 'Responsive'],
-    category: 'website',
-    link: '#',
-    github: '#',
-  },
-  {
-    id: 6,
-    title: 'SaaS Application',
-    description:
-      'Application SaaS multi-tenant avec authentification, facturation et déploiement automatisé.',
-    image: '/images/projects/saas-application.jpg',
-    tags: ['React', 'Docker', 'CI/CD', 'Testing'],
-    category: 'fullstack',
-    link: '#',
-    github: '#',
-  },
-];
+import { useProjectsData, getProjectsByCategory } from '../../data/projects';
 
 const categories = [
   { id: 'all', key: 'all' },
@@ -82,11 +14,33 @@ const categories = [
 export default function ProjectsSection() {
   const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState('all');
+  const { projects, loading, error } = useProjectsData();
 
-  const filteredProjects =
-    activeCategory === 'all'
-      ? projects
-      : projects.filter((project) => project.category === activeCategory);
+  const filteredProjects = getProjectsByCategory(projects, activeCategory);
+
+  if (loading) {
+    return (
+      <section id="projects" className="section-spacing bg-accent/10">
+        <div className="container-custom">
+          <div className="flex justify-center items-center min-h-[400px]">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section id="projects" className="section-spacing bg-accent/10">
+        <div className="container-custom">
+          <div className="text-center text-red-600 p-4">
+            <p>{error}</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="projects" className="section-spacing bg-accent/10">

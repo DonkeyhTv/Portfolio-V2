@@ -44,15 +44,43 @@
   },
   "projects": {
     "title": "My Projects",
-    "subtitle": "Discover my recent work",
-    "viewProject": "View Project",
-    "viewCode": "View Code",
-    "viewAll": "View All Projects",
+    "subtitle": "Explore my recent work and the technologies I've used",
+    "viewAll": "View all projects",
     "filter": {
       "all": "All",
-      "web": "Web Applications",
+      "web": "Web Apps",
       "website": "Websites",
       "fullstack": "Full Stack"
+    },
+    "items": {
+      "ecommerce": {
+        "title": "E-Commerce Platform",
+        "description": "Complete e-commerce platform with inventory management, secure payments, and admin dashboard."
+      },
+      "corporate": {
+        "title": "Corporate Website",
+        "description": "Modern and responsive showcase website for an international company with integrated CMS."
+      },
+      "dashboard": {
+        "title": "Analytics Dashboard",
+        "description": "Complex web application for real-time data visualization with interactive charts."
+      },
+      "booking": {
+        "title": "Booking System",
+        "description": "Complete booking system with SMS notifications via Twilio and availability management."
+      },
+      "portfolio": {
+        "title": "Portfolio Website",
+        "description": "Creative portfolio website with advanced animations and custom design."
+      },
+      "saas": {
+        "title": "SaaS Application",
+        "description": "Multi-tenant SaaS application with authentication, billing, and automated deployment."
+      }
+    },
+    "links": {
+      "demo": "View project",
+      "code": "Source code"
     }
   },
   "skills": {
