@@ -1,16 +1,11 @@
 import { useTranslation } from 'react-i18next';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const socialLinks = [
-  { icon: Github, href: 'https://github.com/yourusername', label: 'GitHub' },
-  {
-    icon: Linkedin,
-    href: 'https://linkedin.com/in/yourusername',
-    label: 'LinkedIn',
-  },
-  { icon: Twitter, href: 'https://twitter.com/yourusername', label: 'Twitter' },
-  { icon: Mail, href: 'mailto:your.email@example.com', label: 'Email' },
+  { icon: Github, href: 'https://github.com/DonkeyhTv', label: 'GitHub' },
+
+  { icon: Mail, href: 'mailto:steve.amissi.web@gmail.com', label: 'Email' },
 ];
 
 export default function Footer() {

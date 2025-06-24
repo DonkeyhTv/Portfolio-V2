@@ -1,20 +1,20 @@
 import { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { ArrowDown, Github, Linkedin, Twitter } from 'lucide-react';
+import { ArrowDown, Github } from 'lucide-react';
 import Typed from 'typed.js';
 import ParticlesBackground from './ParticlesBackground';
 import FloatingShapes from './FloatingShapes';
 import MagneticButton from '../../common/MagneticButton';
 
 const socialLinks = [
-  { icon: Github, href: 'https://github.com', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: Github, href: 'https://github.com/DonkeyhTv', label: 'GitHub' },
 ];
 
 export default function Hero() {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const typedRef = useRef<HTMLSpanElement>(null);
   const containerRef = useRef<HTMLElement>(null);
   const typedInstance = useRef<Typed | null>(null);
@@ -119,16 +119,22 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <MagneticButton>
-              <button className="relative overflow-hidden btn-primary group w-full sm:w-auto">
+              <button
+                onClick={() => navigate('/projects')}
+                className="relative overflow-hidden btn-primary border border-primary-600 group w-full sm:w-auto"
+              >
                 <span className="relative z-10">{t('hero.cta.primary')}</span>
-                <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
+                <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
             </MagneticButton>
 
             <MagneticButton>
-              <button className="relative overflow-hidden btn-outline group w-full sm:w-auto">
+              <button
+                onClick={() => navigate('/cv')}
+                className="relative overflow-hidden btn-outline group w-full sm:w-auto"
+              >
                 <span className="relative z-10">{t('hero.cta.secondary')}</span>
-                <span className="absolute inset-0 bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 -z-10" />
+                <span className="absolute inset-0 bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
               </button>
             </MagneticButton>
           </motion.div>

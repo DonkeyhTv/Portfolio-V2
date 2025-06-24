@@ -10,22 +10,26 @@ import {
   Layout,
   GitBranch,
   Server,
+  Database,
+  Smartphone,
+  Monitor,
+  Zap,
 } from 'lucide-react';
 
 const stats = [
   {
     label: { fr: "Années d'expérience", en: 'Years Experience' },
-    value: '3+',
+    value: '13+',
     icon: Award,
   },
   {
     label: { fr: 'Projets réalisés', en: 'Projects Completed' },
-    value: '25+',
+    value: '100+',
     icon: Rocket,
   },
   {
     label: { fr: 'Technologies maîtrisées', en: 'Technologies Mastered' },
-    value: '15+',
+    value: '20+',
     icon: Code2,
   },
   {
@@ -38,27 +42,79 @@ const stats = [
 const skills = [
   {
     name: 'Frontend Development',
-    level: 90,
+    icon: Layout,
+    level: 100,
     color: 'from-blue-500 to-cyan-500',
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    tech: [
+      'React',
+      'TypeScript',
+      'JavaScript ES6+',
+      'Tailwind CSS',
+      'Framer Motion',
+      'Next.js',
+      'Vue.js',
+      'HTML5',
+      'CSS3/SASS',
+      'Bootstrap',
+      'Material UI',
+      'Redux',
+    ],
   },
   {
     name: 'Backend Development',
-    level: 85,
+    icon: Server,
+    level: 100,
     color: 'from-purple-500 to-pink-500',
-    tech: ['Node.js', 'Firebase', 'REST APIs', 'Express'],
+    tech: [
+      'Node.js',
+      'Firebase',
+      'Express.js',
+      'REST APIs',
+      'GraphQL',
+      'PHP',
+      'Laravel',
+      'MySQL',
+      'PostgreSQL',
+      'MongoDB',
+      'Redis',
+      'Socket.io',
+    ],
   },
   {
-    name: 'UI/UX Design',
-    level: 80,
+    name: 'Mobile & Responsive',
+    icon: Smartphone,
+    level: 100,
     color: 'from-green-500 to-teal-500',
-    tech: ['Figma', 'Responsive Design', 'User Experience', 'Prototyping'],
+    tech: [
+      'React Native',
+      'Progressive Web Apps',
+      'Responsive Design',
+      'Mobile First',
+      'Capacitor',
+      'Ionic',
+      'Flutter basics',
+      'Cross-platform',
+    ],
   },
   {
-    name: 'Database & DevOps',
-    level: 75,
+    name: 'DevOps & Tools',
+    icon: GitBranch,
+    level: 100,
     color: 'from-orange-500 to-red-500',
-    tech: ['Firestore', 'MongoDB', 'Git', 'CI/CD'],
+    tech: [
+      'Git/GitHub/GitLab',
+      'Docker',
+      'CI/CD',
+      'Webpack',
+      'Vite',
+      'npm/yarn/pnpm',
+      'Linux',
+      'Nginx',
+      'VS Code',
+      'Postman',
+      'Figma',
+      'Jira',
+    ],
   },
 ];
 
@@ -68,60 +124,109 @@ const technologies = {
     'TypeScript',
     'JavaScript ES6+',
     'HTML5',
-    'CSS3',
+    'CSS3/SASS',
     'Tailwind CSS',
     'Framer Motion',
     'Vite',
+    'Next.js',
+    'Vue.js',
+
+    'Testing (Jest/Cypress)',
   ],
-  backend: ['Node.js', 'Firebase', 'Express.js', 'REST APIs', 'GraphQL basics'],
-  tools: ['Git', 'VS Code', 'Figma', 'Postman', 'Chrome DevTools', 'npm/yarn'],
-  learning: ['Next.js', 'Docker', 'AWS', 'Testing (Jest/Cypress)'],
+  backend: [
+    'Node.js',
+    'Firebase',
+    'Express.js',
+    'REST APIs',
+    'GraphQL',
+    'PHP',
+    'Laravel',
+    'MySQL',
+    'PostgreSQL',
+    'MongoDB',
+    'Redis',
+  ],
+  tools: [
+    'Git',
+    'VS Code',
+    'Figma',
+    'Postman',
+    'Chrome DevTools',
+    'npm/yarn/pnpm',
+    'Webpack',
+    'Docker',
+    'Linux',
+    'Nginx',
+    'Jira/Trello',
+  ],
+  learning: [
+    'Three.js',
+    'WebGL',
+    'AWS',
+    'Kubernetes',
+
+    'Rust',
+    'Go',
+    'Machine Learning',
+  ],
 };
 
 const timeline = [
   {
-    year: '2024',
+    year: '2014 - 2024',
     title: {
-      fr: 'Développeur Full Stack Freelance',
-      en: 'Freelance Full Stack Developer',
-    },
-    company: { fr: 'Indépendant', en: 'Self-Employed' },
-    description: {
-      fr: "Développement d'applications web modernes pour divers clients. Spécialisation en React, TypeScript et Firebase. Création de solutions sur mesure avec une attention particulière à l'expérience utilisateur.",
-      en: 'Developing modern web applications for various clients. Specializing in React, TypeScript, and Firebase. Creating custom solutions with a focus on user experience.',
-    },
-  },
-  {
-    year: '2023',
-    title: { fr: 'Développeur Full Stack', en: 'Full Stack Developer' },
-    company: { fr: 'Agence Web', en: 'Web Agency' },
-    description: {
-      fr: "Développement de sites web et d'applications pour des PME. Mise en place d'architectures scalables et maintenance de projets existants. Collaboration étroite avec l'équipe design.",
-      en: 'Developing websites and applications for SMEs. Implementing scalable architectures and maintaining existing projects. Close collaboration with the design team.',
-    },
-  },
-  {
-    year: '2022',
-    title: { fr: 'Développeur Frontend', en: 'Frontend Developer' },
-    company: { fr: 'Startup Tech', en: 'Tech Startup' },
-    description: {
-      fr: "Création d'interfaces utilisateur réactives et intuitives. Intégration de maquettes et optimisation des performances. Apprentissage des technologies backend.",
-      en: 'Creating responsive and intuitive user interfaces. Integrating mockups and optimizing performance. Learning backend technologies.',
-    },
-  },
-  {
-    year: '2021',
-    title: {
-      fr: 'Formation & Début de carrière',
-      en: 'Training & Career Start',
+      fr: 'Développeur Senior Full Stack',
+      en: 'Senior Full Stack Developer',
     },
     company: {
-      fr: 'Autodidacte & Projets personnels',
-      en: 'Self-taught & Personal Projects',
+      fr: 'Agence Optesite - Bruxelles',
+      en: 'Optesite Agency - Brussels',
     },
     description: {
-      fr: "Apprentissage intensif du développement web moderne. Réalisation de premiers projets clients. Construction d'un portfolio solide.",
-      en: 'Intensive learning of modern web development. Completing first client projects. Building a solid portfolio.',
+      fr: "Développement d'applications web complexes et de sites sur mesure pour des clients variés. Expertise en React, TypeScript, Node.js et Firebase. Gestion de projets de bout en bout et mentoring des développeurs juniors.",
+      en: 'Development of complex web applications and custom websites for various clients. Expertise in React, TypeScript, Node.js and Firebase. End-to-end project management and mentoring junior developers.',
+    },
+  },
+  {
+    year: '2012 - 2016',
+    title: {
+      fr: 'Développeur Medior Frontend',
+      en: 'Medior Frontend Developer',
+    },
+    company: {
+      fr: "Magasin Pépin d'Pomme - Tournai",
+      en: "Pépin d'Pomme Store - Tournai",
+    },
+    description: {
+      fr: "Développement et maintenance du site e-commerce. Optimisation de l'expérience utilisateur et intégration de nouvelles fonctionnalités. Amélioration des performances et du référencement.",
+      en: 'E-commerce website development and maintenance. User experience optimization and new features integration. Performance and SEO improvements.',
+    },
+  },
+  {
+    year: '2011 - 2012',
+    title: {
+      fr: 'Développeur Junior Frontend',
+      en: 'Junior Frontend Developer',
+    },
+    company: { fr: 'Agence Axecible - Lille', en: 'Axecible Agency - Lille' },
+    description: {
+      fr: "Intégration de maquettes et développement d'interfaces web. Apprentissage des bonnes pratiques et des technologies modernes. Participation à des projets clients variés.",
+      en: 'Mockup integration and web interface development. Learning best practices and modern technologies. Participation in various client projects.',
+    },
+  },
+  {
+    year: '2007 - 2011',
+    title: {
+      fr: 'BES Développeur Web',
+      en: 'Web Developer Degree',
+    },
+    company: {
+      fr: 'Institut Paul Hankar - Bruxelles',
+      en: 'Paul Hankar Institute - Brussels',
+    },
+    description: {
+      fr: 'Formation complète en développement web : HTML, CSS, JavaScript, PHP, MySQL. Projets pratiques et stages en entreprise. Acquisition des bases solides du développement web.',
+      en: 'Complete web development training: HTML, CSS, JavaScript, PHP, MySQL. Practical projects and internships. Acquisition of solid web development foundations.',
     },
   },
 ];
@@ -135,24 +240,24 @@ export default function AboutPage() {
       en: 'About Me',
     },
     subtitle: {
-      fr: "Développeur Full Stack passionné par la création d'expériences web exceptionnelles",
-      en: 'Full Stack Developer passionate about creating exceptional web experiences',
+      fr: "Développeur Full Stack Senior avec 13+ ans d'expérience dans la création de solutions web innovantes",
+      en: 'Senior Full Stack Developer with 13+ years of experience creating innovative web solutions',
     },
     intro: {
       title: {
-        fr: "Créateur d'expériences digitales",
-        en: 'Digital Experience Creator',
+        fr: 'Expert en développement web depuis 2011',
+        en: 'Web Development Expert since 2011',
       },
       paragraphs: {
         fr: [
-          'Passionné par le développement web moderne, je crée des applications performantes et élégantes qui résolvent de vrais problèmes. Mon approche combine créativité technique et souci du détail pour livrer des solutions qui dépassent les attentes.',
-          "Basé à Tournai, je travaille avec des technologies cutting-edge comme React, TypeScript et Firebase pour donner vie à vos idées. Que ce soit pour un site vitrine, une application web complexe ou un outil sur mesure, j'apporte expertise technique et vision créative à chaque projet.",
-          'Mon objectif ? Transformer vos concepts en réalités digitales qui captivent vos utilisateurs et propulsent votre activité vers de nouveaux sommets.',
+          "Fort d'une expérience de plus de 13 ans dans le développement web, j'ai évolué du frontend au full stack, maîtrisant les technologies les plus modernes. Mon parcours m'a permis de travailler sur des projets variés, du e-commerce aux applications d'entreprise complexes.",
+          'Basé à Tournai avec une expérience internationale (Lille, Bruxelles), je combine expertise technique approfondie et vision créative. Spécialisé en React, TypeScript et PostgreSQL, je crée des solutions robustes et scalables qui répondent aux besoins métiers les plus exigeants.',
+          "Mon objectif ? Mettre mon expertise au service de vos projets pour créer des applications web performantes, élégantes et pérennes qui propulsent votre activité dans l'ère digitale.",
         ],
         en: [
-          'Passionate about modern web development, I create high-performance and elegant applications that solve real problems. My approach combines technical creativity with attention to detail to deliver solutions that exceed expectations.',
-          "Based in Tournai, Belgium, I work with cutting-edge technologies like React, TypeScript, and Firebase to bring your ideas to life. Whether it's a showcase website, a complex web application, or a custom tool, I bring technical expertise and creative vision to every project.",
-          'My goal? Transform your concepts into digital realities that captivate your users and propel your business to new heights.',
+          "With over 13 years of experience in web development, I've evolved from frontend to full stack, mastering the most modern technologies. My journey has allowed me to work on varied projects, from e-commerce to complex enterprise applications.",
+          'Based in Tournai with international experience (Lille, Brussels), I combine deep technical expertise with creative vision. Specialized in React, TypeScript, and PostgreSQL, I create robust and scalable solutions that meet the most demanding business needs.',
+          'My goal? Put my expertise at the service of your projects to create performant, elegant, and sustainable web applications that propel your business into the digital era.',
         ],
       },
     },
@@ -282,9 +387,11 @@ export default function AboutPage() {
                       <Code2 className="w-16 h-16 text-primary" />
                       <Globe className="w-16 h-16 text-purple-600" />
                     </div>
-                    <p className="text-2xl font-bold">Full Stack Developer</p>
+                    <p className="text-2xl font-bold">
+                      Senior Full Stack Developer
+                    </p>
                     <p className="text-muted-foreground mt-2">
-                      Tournai, Belgium
+                      Tournai, Belgium • 13+ years
                     </p>
                   </div>
                 </div>
@@ -351,7 +458,7 @@ export default function AboutPage() {
             </p>
           </motion.div>
 
-          <div className="max-w-3xl mx-auto space-y-8">
+          <div className="max-w-4xl mx-auto space-y-10">
             {skills.map((skill, index) => (
               <motion.div
                 key={skill.name}
@@ -360,27 +467,41 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <div className="flex justify-between mb-2">
-                  <span className="font-medium">{skill.name}</span>
-                  <span className="text-muted-foreground">{skill.level}%</span>
+                <div className="flex justify-between items-center mb-3">
+                  <span className="font-medium text-lg">{skill.name}</span>
+                  <skill.icon className="w-6 h-6 text-primary" />
                 </div>
-                <div className="relative h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden mb-2">
+                <div className="relative h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden mb-4">
                   <motion.div
                     className={`absolute inset-y-0 left-0 bg-gradient-to-r ${skill.color} rounded-full`}
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.level}%` }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1, delay: index * 0.1 }}
+                    transition={{ duration: 1.5, delay: index * 0.1 }}
                   />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <motion.div
+                      initial={{ scale: 0 }}
+                      whileInView={{ scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: index * 0.1 + 1 }}
+                    >
+                      <Zap className="w-3 h-3 text-white drop-shadow-md" />
+                    </motion.div>
+                  </div>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {skill.tech.map((tech, techIndex) => (
-                    <span
+                    <motion.span
                       key={techIndex}
-                      className="text-xs px-2 py-1 bg-primary/10 text-primary rounded"
+                      className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full"
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.1 + techIndex * 0.05 }}
                     >
                       {tech}
-                    </span>
+                    </motion.span>
                   ))}
                 </div>
               </motion.div>

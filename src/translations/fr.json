@@ -18,9 +18,11 @@
     "title": "À propos de moi",
     "subtitle": "Développeur Full Stack passionné par l'innovation et les nouvelles technologies",
     "heading": "Créateur d'Expériences Web Complètes",
-    "paragraph1": "Fort de 5 années d'expérience dans le développement web, je maîtrise l'ensemble du cycle de création d'applications : du webdesign initial avec Figma jusqu'au déploiement en production. Ma polyvalence me permet d'intervenir sur React, Vue.js et Angular selon les besoins du projet.",
-    "paragraph2": "Diplômé BES WEBDEVELOPER de l'institut Paul Hankar à Bruxelles et autodidacte passionné, je continue de me former régulièrement, notamment via Technocité. Cette soif d'apprentissage me permet de rester à la pointe des technologies et d'offrir des solutions innovantes.",
-    "paragraph3": "Mon expertise couvre le déploiement frontend/backend, la gestion de bases de données avec DBeaver, l'automatisation via cron/Putty, l'intégration de services (mailing, Twilio), et l'utilisation de Docker. Je m'assure que chaque projet soit testé, performant et maintenable.",
+    "paragraph1": "Fort de 13 années d'expérience dans le développement web, j'ai évolué de développeur junior frontend à expert full stack senior. Mon parcours m'a permis de maîtriser l'ensemble du cycle de création d'applications : du webdesign initial avec Figma jusqu'au déploiement en production. Ma polyvalence me permet d'intervenir sur React, TypeScript, Node.js et PHP selon les besoins du projet.",
+
+    "paragraph2": "Diplômé BES WEBDEVELOPER de l'institut Paul Hankar à Bruxelles (2007-2011), j'ai débuté chez Axecible à Lille avant d'évoluer chez Pépin d'Pomme à Tournai puis chez Optesite à Bruxelles où j'occupe un poste senior depuis 10 ans. Cette riche expérience internationale m'a permis de travailler sur des projets variés, du e-commerce aux applications d'entreprise complexes.",
+
+    "paragraph3": "Mon expertise couvre l'architecture complète d'applications web : développement frontend/backend, gestion de bases de données (MySQL, MongoDB, Firebase), DevOps (Docker, CI/CD), intégration de services tiers, et optimisation des performances. Avec plus de 100 projets livrés, je m'assure que chaque solution soit scalable, testée et maintenable sur le long terme.",
     "downloadCV": "Télécharger mon CV",
     "yearsExperience": "Années d'expérience",
     "features": {

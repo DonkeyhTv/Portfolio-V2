@@ -18,9 +18,11 @@
     "title": "About Me",
     "subtitle": "Full Stack Developer passionate about innovation and new technologies",
     "heading": "Complete Web Experience Creator",
-    "paragraph1": "With 5 years of experience in web development, I master the entire application creation cycle: from initial web design with Figma to production deployment. My versatility allows me to work with React, Vue.js, and Angular according to project needs.",
-    "paragraph2": "Graduate of BES WEBDEVELOPER from Paul Hankar Institute in Brussels and passionate self-taught developer, I continue to train regularly, notably through Technocité. This thirst for learning allows me to stay at the cutting edge of technology and offer innovative solutions.",
-    "paragraph3": "My expertise covers frontend/backend deployment, database management with DBeaver, automation via cron/Putty, service integration (mailing, Twilio), and Docker usage. I ensure that every project is tested, performant, and maintainable.",
+    "paragraph1": "With 13 years of experience in web development, I've evolved from junior frontend developer to senior full stack expert. My journey has allowed me to master the entire application creation cycle: from initial webdesign with Figma to production deployment. My versatility enables me to work with React, TypeScript, Node.js and PHP according to project needs.",
+
+    "paragraph2": "Graduated with a BES WEBDEVELOPER degree from Paul Hankar Institute in Brussels (2007-2011), I started at Axecible in Lille before evolving at Pépin d'Pomme in Tournai and then at Optesite in Brussels where I've held a senior position for 10 years. This rich international experience has allowed me to work on varied projects, from e-commerce to complex enterprise applications.",
+
+    "paragraph3": "My expertise covers complete web application architecture: frontend/backend development, database management (MySQL, MongoDB, Firebase), DevOps (Docker, CI/CD), third-party service integration, and performance optimization. With over 100 delivered projects, I ensure that every solution is scalable, tested, and maintainable in the long term.",
     "downloadCV": "Download Resume",
     "yearsExperience": "Years of Experience",
     "features": {
