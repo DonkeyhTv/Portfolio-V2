@@ -1,23 +1,43 @@
-// src/components/common/ProjectCard.tsx
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Project } from '../../data/projects';
 
 interface ProjectCardProps {
-  project: Project;
+  project: {
+    id?: string;
+    translationKey?: string;
+    translations?: {
+      fr: { title: string; description: string };
+      en: { title: string; description: string };
+    };
+    image: string;
+    tags: string[];
+    category: string;
+    featured: boolean;
+    links: {
+      demo?: string;
+      github?: string;
+    };
+  };
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language;
 
-  // Récupérer le titre et la description traduits
-  const title = t(`projects.items.${project.translationKey}.title`);
-  const description = t(`projects.items.${project.translationKey}.description`);
+  const title =
+    project.translations?.[currentLang as 'fr' | 'en']?.title ||
+    project.translations?.fr?.title ||
+    'Untitled Project';
+
+  const description =
+    project.translations?.[currentLang as 'fr' | 'en']?.description ||
+    project.translations?.fr?.description ||
+    'No description available';
 
   return (
     <motion.div
-      className="group relative bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
+      className="group relative bg-blue-950 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
       whileHover={{ y: -5 }}
     >
       <div className="aspect-video relative overflow-hidden">
@@ -25,6 +45,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <img
           src={project.image}
           alt={title}
+          loading="lazy"
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
         />
         <div className="absolute top-4 right-4 flex gap-2 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -62,7 +83,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full"
+              className="px-2 py-1 border border-blue-500 text-white text-xs rounded-full"
             >
               {tag}
             </span>

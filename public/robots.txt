@@ -1,0 +1,38 @@
+# robots.txt pour steve-amissi.be
+# Permet l'indexation complète du site par les moteurs de recherche
+
+# Autoriser tous les robots
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*.map$
+
+# Bloquer les mauvais bots connus
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Autoriser spécifiquement Google, Bing, etc.
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://steve-amissi.be/sitemap.xml
+
+# Délai entre les requêtes (en secondes) pour les bots respectueux
+Crawl-delay: 1

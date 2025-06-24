@@ -1,5 +1,6 @@
-import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
+import { ProjectsSection } from '@/components/sections';
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 export default function ProjectsPage() {
   const { t } = useTranslation();
@@ -12,9 +13,10 @@ export default function ProjectsPage() {
       transition={{ duration: 0.5 }}
     >
       <h1 className="text-4xl md:text-5xl font-bold mb-8 text-gradient">
-        {t("projects.title")}
+        {t('projects.title')}
       </h1>
-      <p className="text-lg text-muted-foreground">{t("projects.subtitle")}</p>
+      <p className="text-lg text-muted-foreground">{t('projects.subtitle')}</p>
+      <ProjectsSection />
     </motion.div>
   );
 }

@@ -106,7 +106,9 @@
       "subjectPlaceholder": "Comment puis-je vous aider ?",
       "message": "Message",
       "messagePlaceholder": "Votre message ici...",
-      "submit": "Envoyer le message"
+      "submit": "Envoyer le message",
+      "success": "Message envoyé avec succès ! Je vous répondrai dès que possible.",
+      "sending": "Envoi en cours..."
     }
   },
   "footer": {

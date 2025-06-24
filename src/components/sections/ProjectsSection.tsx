@@ -96,16 +96,6 @@ export default function ProjectsSection() {
             </motion.div>
           ))}
         </motion.div>
-
-        <motion.div
-          className="text-center mt-12"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          <button className="btn-outline">{t('projects.viewAll')}</button>
-        </motion.div>
       </div>
     </section>
   );

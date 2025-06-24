@@ -13,7 +13,9 @@ export default function ParticlesBackground() {
 
   const particlesLoaded = useCallback(
     async (container: Container | undefined) => {
-      console.log('Particles loaded', container);
+      if (import.meta.env.VITE_SHOW_DEV_LOGS === 'true') {
+        console.log('Particles loaded', container);
+      }
     },
     []
   );
