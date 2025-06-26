@@ -15,14 +15,93 @@
     }
   },
   "about": {
-    "title": "À propos de moi",
-    "subtitle": "Développeur Full Stack passionné par l'innovation et les nouvelles technologies",
-    "heading": "Créateur d'Expériences Web Complètes",
-    "paragraph1": "Fort de 13 années d'expérience dans le développement web, j'ai évolué de développeur junior frontend à expert full stack senior. Mon parcours m'a permis de maîtriser l'ensemble du cycle de création d'applications : du webdesign initial avec Figma jusqu'au déploiement en production. Ma polyvalence me permet d'intervenir sur React, TypeScript, Node.js et PHP selon les besoins du projet.",
-
-    "paragraph2": "Diplômé BES WEBDEVELOPER de l'institut Paul Hankar à Bruxelles (2007-2011), j'ai débuté chez Axecible à Lille avant d'évoluer chez Pépin d'Pomme à Tournai puis chez Optesite à Bruxelles où j'occupe un poste senior depuis 10 ans. Cette riche expérience internationale m'a permis de travailler sur des projets variés, du e-commerce aux applications d'entreprise complexes.",
-
-    "paragraph3": "Mon expertise couvre l'architecture complète d'applications web : développement frontend/backend, gestion de bases de données (MySQL, MongoDB, Firebase), DevOps (Docker, CI/CD), intégration de services tiers, et optimisation des performances. Avec plus de 100 projets livrés, je m'assure que chaque solution soit scalable, testée et maintenable sur le long terme.",
+    "title": "À Propos",
+    "subtitle": "Développeur Full Stack Senior avec 13+ ans d'expérience dans la création de solutions web innovantes",
+    "intro": {
+      "title": "Expert en développement web depuis 2011",
+      "paragraphs": [
+        "Fort d'une expérience de plus de 13 ans dans le développement web, j'ai évolué du frontend au full stack, maîtrisant les technologies les plus modernes. Mon parcours m'a permis de travailler sur des projets variés, du e-commerce aux applications d'entreprise complexes.",
+        "Basé à Tournai avec une expérience internationale (Lille, Bruxelles), je combine expertise technique approfondie et vision créative. Spécialisé en React, TypeScript et PostgreSQL, je crée des solutions robustes et scalables qui répondent aux besoins métiers les plus exigeants.",
+        "Mon objectif ? Mettre mon expertise au service de vos projets pour créer des applications web performantes, élégantes et pérennes qui propulsent votre activité dans l'ère digitale."
+      ]
+    },
+    "stats": {
+      "title": "Les chiffres parlent",
+      "subtitle": "Quelques statistiques sur mon parcours",
+      "items": {
+        "experience": "Années d'expérience",
+        "projects": "Projets réalisés",
+        "technologies": "Technologies maîtrisées",
+        "coffee": "Tasses de café"
+      }
+    },
+    "skills": {
+      "title": "Compétences & Expertise",
+      "subtitle": "Technologies que je maîtrise au quotidien"
+    },
+    "techStack": {
+      "title": "Stack Technique",
+      "categories": {
+        "frontend": "Frontend",
+        "backend": "Backend & APIs",
+        "tools": "Outils & Workflow",
+        "learning": "En apprentissage"
+      }
+    },
+    "experience": {
+      "title": "Parcours Professionnel",
+      "subtitle": "Mon évolution dans le développement web"
+    },
+    "timeline": [
+      {
+        "year": "2014 - 2025",
+        "title": "Développeur Full Stack",
+        "company": "Agence Optesite - Bruxelles",
+        "description": "Développement d'applications web complexes et de sites sur mesure pour des clients variés. Expertise en React, TypeScript, Node.js et Firebase. Gestion de projets de bout en bout."
+      },
+      {
+        "year": "2012 - 2014",
+        "title": "Développeur Frontend",
+        "company": "Magasin Pépin d'Pomme - Tournai",
+        "description": "Développement et maintenance du site e-commerce. Optimisation de l'expérience utilisateur et intégration de nouvelles fonctionnalités. Amélioration des performances et du référencement."
+      },
+      {
+        "year": "2011 - 2012",
+        "title": "Développeur Frontend",
+        "company": "Agence Axecible - Lille",
+        "description": "Intégration de maquettes et développement d'interfaces web. Apprentissage des bonnes pratiques et des technologies modernes. Participation à des projets clients variés."
+      },
+      {
+        "year": "2010 - 2011",
+        "title": "Développeur backend",
+        "company": "Technocité / Cefora (Tournai)",
+        "description": "Formation qualifiante à l'Eurometropolitan E-Campus de Tournai"
+      },
+      {
+        "year": "2008 - 2010",
+        "title": "BES Développeur Web",
+        "company": "Institut Paul Hankar - Bruxelles",
+        "description": "Formation professionnalisante couvrant la conception, le développement, la mise à jour et la maintenance d'applications web statiques et dynamiques. Maîtrise des langages HTML, CSS, JavaScript, PHP, MySQL et des CMS. Compétences en bases de données, sécurité, compatibilité multi-navigateurs, référencement, et déploiement. Intégration de frameworks, pratiques de travail en équipe, participation aux cahiers des charges et veille technologique. Modules axés sur la programmation, le design, la gestion de projet et les stages en entreprise."
+      }
+    ],
+    "values": {
+      "title": "Valeurs Fondamentales",
+      "subtitle": "Les principes qui guident mon travail",
+      "items": [
+        {
+          "title": "Code Propre",
+          "description": "Écrire du code maintenable, lisible et optimisé. Chaque ligne compte pour créer des applications durables."
+        },
+        {
+          "title": "Design Élégant",
+          "description": "Créer des interfaces qui allient beauté et fonctionnalité. L'expérience utilisateur est au cœur de chaque décision."
+        },
+        {
+          "title": "Performance Optimale",
+          "description": "Optimiser chaque aspect pour des applications rapides et réactives. La vitesse est cruciale pour l'engagement."
+        }
+      ]
+    },
     "downloadCV": "Télécharger mon CV",
     "yearsExperience": "Années d'expérience",
     "features": {

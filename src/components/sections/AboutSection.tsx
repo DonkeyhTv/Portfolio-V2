@@ -57,13 +57,14 @@ export default function AboutSection() {
               <p>{t('about.paragraph2')}</p>
               <p>{t('about.paragraph3')}</p>
             </div>
-            <motion.button
-              className="btn-primary mt-8"
+            <motion.a
+              href="/cv"
+              className="btn-primary mt-8 inline-flex items-center gap-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               {t('about.downloadCV')}
-            </motion.button>
+            </motion.a>
           </motion.div>
 
           <motion.div
@@ -112,7 +113,9 @@ export default function AboutSection() {
                     />
                   </motion.div>
 
-                  <div className="text-6xl font-bold text-gradient mb-4">5</div>
+                  <div className="text-6xl font-bold text-gradient mb-4">
+                    13+
+                  </div>
                   <p className="text-xl text-muted-foreground">
                     {t('about.yearsExperience')}
                   </p>

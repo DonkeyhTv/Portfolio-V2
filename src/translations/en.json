@@ -6,25 +6,104 @@
     "contact": "Contact"
   },
   "hero": {
-    "greeting": "Hi, I'm",
+    "greeting": "Hello, I'm",
     "role": "Full Stack Developer",
     "description": "I transform your ideas into exceptional digital experiences",
     "cta": {
-      "primary": "View My Work",
-      "secondary": "Download Resume"
+      "primary": "View my projects",
+      "secondary": "Download my CV"
     }
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Full Stack Developer passionate about innovation and new technologies",
-    "heading": "Complete Web Experience Creator",
-    "paragraph1": "With 13 years of experience in web development, I've evolved from junior frontend developer to senior full stack expert. My journey has allowed me to master the entire application creation cycle: from initial webdesign with Figma to production deployment. My versatility enables me to work with React, TypeScript, Node.js and PHP according to project needs.",
-
-    "paragraph2": "Graduated with a BES WEBDEVELOPER degree from Paul Hankar Institute in Brussels (2007-2011), I started at Axecible in Lille before evolving at Pépin d'Pomme in Tournai and then at Optesite in Brussels where I've held a senior position for 10 years. This rich international experience has allowed me to work on varied projects, from e-commerce to complex enterprise applications.",
-
-    "paragraph3": "My expertise covers complete web application architecture: frontend/backend development, database management (MySQL, MongoDB, Firebase), DevOps (Docker, CI/CD), third-party service integration, and performance optimization. With over 100 delivered projects, I ensure that every solution is scalable, tested, and maintainable in the long term.",
-    "downloadCV": "Download Resume",
-    "yearsExperience": "Years of Experience",
+    "subtitle": "Senior Full Stack Developer with 13+ years of experience creating innovative web solutions",
+    "intro": {
+      "title": "Web Development Expert since 2011",
+      "paragraphs": [
+        "With over 13 years of experience in web development, I've evolved from frontend to full stack, mastering the most modern technologies. My journey has allowed me to work on varied projects, from e-commerce to complex enterprise applications.",
+        "Based in Tournai with international experience (Lille, Brussels), I combine deep technical expertise with creative vision. Specialized in React, TypeScript, and PostgreSQL, I create robust and scalable solutions that meet the most demanding business needs.",
+        "My goal? Put my expertise at the service of your projects to create performant, elegant, and sustainable web applications that propel your business into the digital era."
+      ]
+    },
+    "stats": {
+      "title": "Numbers Speak",
+      "subtitle": "Some statistics about my journey",
+      "items": {
+        "experience": "Years Experience",
+        "projects": "Projects Completed",
+        "technologies": "Technologies Mastered",
+        "coffee": "Cups of Coffee"
+      }
+    },
+    "skills": {
+      "title": "Skills & Expertise",
+      "subtitle": "Technologies I master daily"
+    },
+    "techStack": {
+      "title": "Tech Stack",
+      "categories": {
+        "frontend": "Frontend",
+        "backend": "Backend & APIs",
+        "tools": "Tools & Workflow",
+        "learning": "Currently Learning"
+      }
+    },
+    "experience": {
+      "title": "Professional Journey",
+      "subtitle": "My evolution in web development"
+    },
+    "timeline": [
+      {
+        "year": "2014 - 2025",
+        "title": "Full Stack Developer",
+        "company": "Optesite Agency - Brussels",
+        "description": "Development of complex web applications and custom websites for various clients. Expertise in React, TypeScript, Node.js and Firebase. End-to-end project management."
+      },
+      {
+        "year": "2012 - 2014",
+        "title": "Frontend Developer",
+        "company": "Pépin d'Pomme Store - Tournai",
+        "description": "E-commerce website development and maintenance. User experience optimization and new features integration. Performance and SEO improvements."
+      },
+      {
+        "year": "2011 - 2012",
+        "title": "Frontend Developer",
+        "company": "Axecible Agency - Lille",
+        "description": "Mockup integration and web interface development. Learning best practices and modern technologies. Participation in various client projects."
+      },
+      {
+        "year": "2010 - 2011",
+        "title": "Backend Developer",
+        "company": "Technocité / Cefora (Tournai)",
+        "description": "Qualifying training at the Eurometropolitan E-Campus in Tournai"
+      },
+      {
+        "year": "2008 - 2010",
+        "title": "Web Developer Degree",
+        "company": "Paul Hankar Institute - Brussels",
+        "description": "Professional training program focused on the design, development, maintenance, and evolution of static and dynamic web applications. Mastery of HTML, CSS, JavaScript, PHP, MySQL, and CMS. Skills in database management, security, cross-browser compatibility, SEO, and deployment. Use of frameworks, teamwork, participation in project specifications, and continuous technological monitoring. Modules included programming, design, project management, and internships."
+      }
+    ],
+    "values": {
+      "title": "Core Values",
+      "subtitle": "The principles that guide my work",
+      "items": [
+        {
+          "title": "Clean Code",
+          "description": "Writing maintainable, readable, and optimized code. Every line matters in creating sustainable applications."
+        },
+        {
+          "title": "Elegant Design",
+          "description": "Creating interfaces that combine beauty and functionality. User experience is at the heart of every decision."
+        },
+        {
+          "title": "Optimal Performance",
+          "description": "Optimizing every aspect for fast and responsive applications. Speed is crucial for engagement."
+        }
+      ]
+    },
+    "downloadCV": "Download my CV",
+    "yearsExperience": "Years of experience",
     "features": {
       "cleanCode": {
         "title": "Clean & Maintainable Code",
@@ -36,21 +115,21 @@
       },
       "performance": {
         "title": "Optimized Performance",
-        "description": "Fast and smooth applications through code optimization and efficient deployment."
+        "description": "Fast and fluid applications through code optimization and efficient deployment."
       },
       "userFocused": {
-        "title": "User Centered",
+        "title": "User-Centered",
         "description": "Development oriented towards real user needs to create intuitive and effective solutions."
       }
     }
   },
   "projects": {
     "title": "My Projects",
-    "subtitle": "Explore my recent work and the technologies I've used",
+    "subtitle": "Discover my recent achievements and the technologies I've used",
     "viewAll": "View all projects",
     "filter": {
       "all": "All",
-      "web": "Web Apps",
+      "web": "Web Applications",
       "website": "Websites",
       "fullstack": "Full Stack"
     },
@@ -92,8 +171,8 @@
   "contact": {
     "title": "Contact Me",
     "subtitle": "Currently available for new opportunities. Let's work together on something exceptional.",
-    "getInTouch": "Get in Touch",
-    "description": "Feel free to reach out to discuss your projects, ideas, or collaboration opportunities. I'd be delighted to hear from you.",
+    "getInTouch": "Get in touch",
+    "description": "Feel free to contact me to discuss your projects, ideas, or collaboration opportunities. I would be delighted to chat with you.",
     "info": {
       "email": "Email",
       "phone": "Phone",
@@ -108,18 +187,18 @@
       "subjectPlaceholder": "How can I help you?",
       "message": "Message",
       "messagePlaceholder": "Your message here...",
-      "submit": "Send Message",
-      "success": "Your message has been sent successfully!",
+      "submit": "Send message",
+      "success": "Message sent successfully! I'll get back to you as soon as possible.",
       "sending": "Sending..."
     }
   },
   "footer": {
     "rights": "All rights reserved",
-    "builtWith": "Built with React, TypeScript, and Tailwind CSS"
+    "builtWith": "Built with React, TypeScript and Tailwind CSS"
   },
   "404": {
-    "title": "Page Not Found",
+    "title": "Page not found",
     "description": "The page you're looking for doesn't exist.",
-    "backHome": "Back to Home"
+    "backHome": "Back to home"
   }
 }

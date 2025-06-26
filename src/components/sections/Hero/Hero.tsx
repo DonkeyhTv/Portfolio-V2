@@ -129,13 +129,13 @@ export default function Hero() {
             </MagneticButton>
 
             <MagneticButton>
-              <button
-                onClick={() => navigate('/cv')}
-                className="relative overflow-hidden btn-outline group w-full sm:w-auto"
+              <a
+                href="/cv.html"
+                className="relative inline-block w-full sm:w-auto px-6 py-3 border border-primary text-primary font-semibold rounded-lg overflow-hidden transition-colors duration-300 hover:text-white group"
               >
                 <span className="relative z-10">{t('hero.cta.secondary')}</span>
-                <span className="absolute inset-0 bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
-              </button>
+                <span className="absolute inset-0 bg-primary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 ease-out z-0" />
+              </a>
             </MagneticButton>
           </motion.div>
 

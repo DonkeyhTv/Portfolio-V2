@@ -420,7 +420,7 @@ export default function AdminDashboardOffline() {
                         setFormData({ ...formData, image: e.target.value })
                       }
                       className="w-full px-3 py-2 bg-background border rounded-lg"
-                      placeholder="https://example.com/image.jpg"
+                      placeholder="https://steve-amissi.be/images/projects/image.jpg"
                     />
                   </div>
 
@@ -499,7 +499,7 @@ export default function AdminDashboardOffline() {
                         setFormData({ ...formData, demoLink: e.target.value })
                       }
                       className="w-full px-3 py-2 bg-background border rounded-lg"
-                      placeholder="https://demo.example.com"
+                      placeholder="https://steve-amissi.be/"
                     />
                   </div>
 
