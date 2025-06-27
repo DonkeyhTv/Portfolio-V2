@@ -50,12 +50,12 @@ export default function AboutSection() {
             transition={{ duration: 0.6 }}
           >
             <h3 className="text-2xl md:text-3xl font-bold mb-6">
-              {t('about.heading')}
+              {t('about.intro.title')}
             </h3>
             <div className="space-y-4 text-muted-foreground">
-              <p>{t('about.paragraph1')}</p>
-              <p>{t('about.paragraph2')}</p>
-              <p>{t('about.paragraph3')}</p>
+              <p>{t('about.intro.paragraphs.0')}</p>
+              <p>{t('about.intro.paragraphs.1')}</p>
+              <p>{t('about.intro.paragraphs.2')}</p>
             </div>
             <motion.a
               href="/cv"
@@ -117,7 +117,7 @@ export default function AboutSection() {
                     13+
                   </div>
                   <p className="text-xl text-muted-foreground">
-                    {t('about.yearsExperience')}
+                    {t('about.stats.items.experience')}
                   </p>
                 </div>
               </div>

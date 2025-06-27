@@ -98,10 +98,55 @@ const skills = [
 
 const valuesIcons = [Code2, Palette, Rocket];
 
+const SkeletonLoader = () => (
+  <div className="min-h-screen bg-background animate-pulse">
+    <section className="relative py-12 md:py-20 overflow-hidden">
+      <div className="container-custom relative z-10 text-center">
+        <div className="h-12 md:h-16 bg-muted rounded-lg w-2/3 mx-auto mb-4 mt-16"></div>
+        <div className="h-6 bg-muted rounded w-3/4 mx-auto mb-4"></div>
+        <div className="flex items-center justify-center gap-4 mt-4">
+          <div className="h-4 bg-muted rounded w-32"></div>
+          <div className="h-4 bg-muted rounded w-24"></div>
+        </div>
+      </div>
+    </section>
+
+    <section className="py-12 md:py-8">
+      <div className="container-custom">
+        <div className="grid md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
+          <div>
+            <div className="h-8 bg-muted rounded w-3/4 mb-4"></div>
+            <div className="space-y-3">
+              <div className="h-4 bg-muted rounded w-full"></div>
+              <div className="h-4 bg-muted rounded w-5/6"></div>
+              <div className="h-4 bg-muted rounded w-4/5"></div>
+            </div>
+          </div>
+          <div className="relative">
+            <div className="w-full aspect-square max-w-md mx-auto bg-muted rounded-2xl"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+);
+
 export default function AboutPage() {
   const { language } = useLanguage();
+  const [isLoading, setIsLoading] = React.useState(true);
 
   const translations = language === 'fr' ? frTranslations : enTranslations;
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      if (translations && Object.keys(translations).length > 0) {
+        setIsLoading(false);
+      }
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, [translations]);
+
   const t = (path: string) => {
     const keys = path.split('.');
     let value: any = translations;
@@ -110,6 +155,23 @@ export default function AboutPage() {
     }
     return value || path;
   };
+
+  if (isLoading) {
+    return <SkeletonLoader />;
+  }
+
+  const introData = t('about.intro.paragraphs');
+  const timelineData = t('about.timeline');
+  const valuesData = t('about.values.items');
+
+  if (
+    !Array.isArray(introData) ||
+    !Array.isArray(timelineData) ||
+    !Array.isArray(valuesData)
+  ) {
+    console.error('Translation data not in expected format');
+    return <SkeletonLoader />;
+  }
 
   return (
     <div className="min-h-screen bg-background">
@@ -121,7 +183,7 @@ export default function AboutPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-3">
+          <h1 className="text-4xl md:text-6xl mt-16 font-bold mb-3">
             <span className="text-gradient">{t('about.title')}</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -141,7 +203,7 @@ export default function AboutPage() {
         </motion.div>
       </section>
 
-      <section className="py-12 md:py-16">
+      <section className="py-12 md:py-8">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
             <motion.div
@@ -154,13 +216,11 @@ export default function AboutPage() {
                 {t('about.intro.title')}
               </h2>
               <div className="space-y-3 text-muted-foreground">
-                {t('about.intro.paragraphs').map(
-                  (paragraph: string, index: number) => (
-                    <p key={index} className="leading-relaxed">
-                      {paragraph}
-                    </p>
-                  )
-                )}
+                {introData.map((paragraph: string, index: number) => (
+                  <p key={index} className="leading-relaxed">
+                    {paragraph}
+                  </p>
+                ))}
               </div>
             </motion.div>
 
@@ -313,7 +373,7 @@ export default function AboutPage() {
           </motion.div>
 
           <div className="max-w-3xl mx-auto">
-            {t('about.timeline').map((item: any, index: number) => (
+            {timelineData.map((item: any, index: number) => (
               <motion.div
                 key={index}
                 className="relative pl-8 pb-6 last:pb-0"
@@ -360,7 +420,7 @@ export default function AboutPage() {
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {t('about.values.items').map((value: any, index: number) => (
+            {valuesData.map((value: any, index: number) => (
               <motion.div
                 key={index}
                 className="text-center"
